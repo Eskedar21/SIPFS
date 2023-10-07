@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EVALUATION PAGE FOR STUDENT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+<body>
+    
+
+<div class="col-lg-12">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="list-group">
+				<a class="list-group-item list-group-item-action" href="#"></a>			 
+			</div>
+		 </div>	
+		<div class="col-md-9">
+			<div class="card card-outline card-info">
+				<div class="card-header">
+					<b>Evaluation Questionnaire for Academic: 1st semister </b>
+					<div class="card-tools">
+						<button class="btn btn-sm btn-flat btn-primary bg-gradient-primary mx-1" form="manage-evaluation">Submit Evaluation</button>
+					</div>
+				</div>
+				<div class="card-body">
+					<fieldset class="border border-info p-2 w-100">
+					   <legend  class="w-auto">Rating Legend</legend>
+					   <p>5 = Strongly Agree, 4 = Agree, 3 = Uncertain, 2 = Disagree, 1 = Strongly Disagree</p>
+					</fieldset>
+					<form id="manage-evaluation">
+						<input type="hidden" name="class_id" value="">
+						<input type="hidden" name="faculty_id" value="">
+						<input type="hidden" name="restriction_id" value="">
+						<input type="hidden" name="subject_id" value="">
+						<input type="hidden" name="academic_id" value="">
+					<div class="clear-fix mt-2"></div>
+					<table class="table table-condensed">
+						<thead>
+							<tr class="bg-gradient-secondary">
+                                <th class="p-1"><b>ABCD</b></th>								
+								<th class="text-center">1</th>
+								<th class="text-center">2</th>
+								<th class="text-center">3</th>
+								<th class="text-center">4</th>
+								<th class="text-center">5</th>
+							</tr>
+						</thead>
+						<tbody class="tr-sortable">
+							<tr class="bg-white">
+								<td class="p-1" width="40%">
+									<input type="hidden" name="qid[]" value="">
+								</td>						
+								<td class="text-center">
+									<div class="icheck-success d-inline">
+				                        <input type="radio" name="rate[]" id="qradio" value="3">
+				                        <label for="qradio">
+				                        </label>
+			                      </div>
+								</td>								 
+							</tr>						
+						</tbody>
+					</table>				
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
